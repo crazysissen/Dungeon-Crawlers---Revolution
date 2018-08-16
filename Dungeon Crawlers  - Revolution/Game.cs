@@ -43,4 +43,6 @@ public static class Game
         ConsoleKey input = GetKeyFromList(possibleChoices);
         return (int)input - 49;
     }
+
+    public static float RandomFloat(Random random, float min, float max) => (float)random.NextDouble() * (max - min) - min;
 }
